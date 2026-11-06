@@ -1,0 +1,24 @@
+{
+  "asset_id": "AST-000001",
+  "asset": {
+    "asset_id": "AST-000001", "name": "EXAMPLE VP-101 oral JAK1 inhibitor", "code_name": "VP-101",
+    "modality": "small_molecule", "stage": "phase2", "status": "active", "target_id": "TGT-000001",
+    "owner": "EXAMPLE Virtual Pharma Co", "aliases": [], "description": "EXAMPLE fictional small molecule. Not a real product.",
+    "created_at": "2024-01-10T09:00:00Z", "updated_at": "2026-10-01T09:00:00Z"
+  },
+  "target": {"target_id": "TGT-000001", "symbol": "JAK1", "name": "Tyrosine-protein kinase JAK1", "uniprot_id": "P23458", "organism": "Homo sapiens"},
+  "indications": [
+    {"indication_id": "IND-000001", "asset_id": "AST-000001", "name": "EXAMPLE Moderate-to-severe atopic dermatitis", "doid": "DOID:3310", "orphan": false, "is_lead": true, "us_prevalence": null, "peak_sales_millions": 1200}
+  ],
+  "studies": [
+    {"study_id": "STY-000001", "asset_id": "AST-000001", "indication_id": "IND-000001", "kind": "clinical", "phase": "phase2", "title": "EXAMPLE Phase 2b dose ranging", "partner_id": null, "status": "ongoing", "start_date": "2026-02-01", "end_date": null, "nct_id": null}
+  ],
+  "batches": [],
+  "submissions": [],
+  "deals": [],
+  "partners": [],
+  "ip_refs": [
+    {"ip_id": "IPR-000001", "asset_id": "AST-000001", "kind": "pct", "number": "PCT/US2023/000101 (EXAMPLE)", "title": "EXAMPLE pyrrolopyrimidine JAK1 inhibitors", "priority_date": "2022-06-01", "expiry_date": null, "status": "published"}
+  ],
+  "external_ids": []
+}

@@ -1,0 +1,4 @@
+name,stage,rnpv,ownership,peak_sales_millions,phase_probabilities,discount_rate,patent_life_years,years_to_launch
+EXAMPLE Lead asset,phase_3,,1.0,1500,phase_3=0.6;approval=0.9,0.10,12,2
+EXAMPLE Partnered asset,phase_2,,0.5,800,phase_2=0.4;phase_3=0.6;approval=0.9,0.12,14,4
+EXAMPLE Platform (valued directly),preclinical,150,1.0,,,,,

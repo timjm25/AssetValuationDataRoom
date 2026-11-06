@@ -1,0 +1,14 @@
+{
+  "_comment": "EXAMPLE DigitalThreadBuilder export (fictional). Node uris are relative to the documents directory.",
+  "nodes": [
+    {"id": "RD-001", "type": "Study", "title": "EXAMPLE in vitro cytotoxicity panel", "uri": "in_vitro_pharmacology_cytotoxicity_EXAMPLE.md"},
+    {"id": "RD-002", "type": "Study", "title": "EXAMPLE dose range finding tox (non-GLP)", "uri": "drf_tox_EXAMPLE.md"},
+    {"id": "MFG-002", "type": "Batch", "title": "EXAMPLE engineering run ENG-001", "uri": "batch_record_ENG-001_EXAMPLE.md"},
+    {"id": "MFG-003", "type": "ProcessDescription", "title": "EXAMPLE process description (external system)", "uri": "https://example.com/EXAMPLE/process"},
+    {"id": "RD-003", "type": "Notebook", "title": "EXAMPLE notebook notes", "uri": "lab_notebook_scan_notes_EXAMPLE.txt"}
+  ],
+  "edges": [
+    {"source": "RD-001", "target": "MFG-002", "type": "informs"},
+    {"source": "MFG-002", "target": "RD-003", "type": "documented_in"}
+  ]
+}

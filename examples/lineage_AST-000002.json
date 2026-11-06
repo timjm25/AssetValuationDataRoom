@@ -1,0 +1,55 @@
+{
+  "asset_id": "AST-000002",
+  "asset": {
+    "asset_id": "AST-000002",
+    "name": "EXAMPLE VR-201 CD19xCD22 autologous CAR-T",
+    "code_name": "VR-201",
+    "modality": "autologous_cell_therapy",
+    "stage": "phase1",
+    "status": "active",
+    "target_id": "TGT-000002",
+    "owner": "EXAMPLE Virtual Pharma Co",
+    "aliases": ["EXAMPLE-CART-22"],
+    "description": "EXAMPLE fictional bispecific autologous CAR-T for relapsed/refractory B-cell lymphoma. Not a real product.",
+    "created_at": "2024-02-01T09:00:00Z",
+    "updated_at": "2026-10-30T15:00:00Z"
+  },
+  "target": {"target_id": "TGT-000002", "symbol": "CD22", "name": "B-cell receptor CD22", "uniprot_id": "P20273", "organism": "Homo sapiens"},
+  "indications": [
+    {"indication_id": "IND-000003", "asset_id": "AST-000002", "name": "EXAMPLE Relapsed/refractory large B-cell lymphoma", "doid": "DOID:0050745", "orphan": true, "is_lead": true, "us_prevalence": 30000, "peak_sales_millions": 900},
+    {"indication_id": "IND-000004", "asset_id": "AST-000002", "name": "EXAMPLE Relapsed/refractory B-cell ALL", "doid": "DOID:0080638", "orphan": true, "is_lead": false, "us_prevalence": 6000, "peak_sales_millions": 250}
+  ],
+  "studies": [
+    {"study_id": "STY-000011", "asset_id": "AST-000002", "indication_id": "IND-000003", "kind": "in_vitro", "phase": "preclinical", "title": "EXAMPLE in vitro cytotoxicity vs CD19-/CD22+ lines", "partner_id": null, "status": "complete", "start_date": "2024-03-01", "end_date": "2024-07-15", "nct_id": null},
+    {"study_id": "STY-000012", "asset_id": "AST-000002", "indication_id": "IND-000003", "kind": "tox", "phase": "preclinical", "title": "EXAMPLE GLP tox and biodistribution", "partner_id": "PTN-000002", "status": "complete", "start_date": "2024-09-01", "end_date": "2025-03-30", "nct_id": null},
+    {"study_id": "STY-000013", "asset_id": "AST-000002", "indication_id": "IND-000003", "kind": "cmc_development", "phase": "preclinical", "title": "EXAMPLE process lock and engineering runs", "partner_id": "PTN-000001", "status": "complete", "start_date": "2024-06-01", "end_date": "2025-05-30", "nct_id": null},
+    {"study_id": "STY-000014", "asset_id": "AST-000002", "indication_id": "IND-000003", "kind": "clinical", "phase": "phase1", "title": "EXAMPLE Phase 1 dose escalation in r/r LBCL", "partner_id": "PTN-000002", "status": "ongoing", "start_date": "2025-11-01", "end_date": null, "nct_id": null}
+  ],
+  "batches": [
+    {"batch_id": "BCH-000021", "asset_id": "AST-000002", "lot_number": "ENG-001", "purpose": "engineering", "status": "released", "manufactured_at": "2025-04-10", "partner_id": "PTN-000001", "cgt_batch_id": "BAT-0001"},
+    {"batch_id": "BCH-000022", "asset_id": "AST-000002", "lot_number": "GMP-001", "purpose": "gmp_clinical", "status": "released", "manufactured_at": "2025-12-02", "partner_id": "PTN-000001", "cgt_batch_id": "BAT-0002"}
+  ],
+  "submissions": [
+    {"submission_id": "SUB-000031", "asset_id": "AST-000002", "kind": "pre_ind", "agency": "FDA", "designation": null, "status": "accepted", "target_date": "2025-04-01", "submitted_date": "2025-03-20", "decision_date": "2025-05-02"},
+    {"submission_id": "SUB-000032", "asset_id": "AST-000002", "kind": "ind", "agency": "FDA", "designation": null, "status": "accepted", "target_date": "2025-08-01", "submitted_date": "2025-07-28", "decision_date": "2025-08-27"},
+    {"submission_id": "SUB-000033", "asset_id": "AST-000002", "kind": "designation", "agency": "FDA", "designation": "rmat", "status": "granted", "target_date": null, "submitted_date": "2026-03-01", "decision_date": "2026-04-28"},
+    {"submission_id": "SUB-000034", "asset_id": "AST-000002", "kind": "designation", "agency": "FDA", "designation": "orphan", "status": "granted", "target_date": null, "submitted_date": "2025-10-01", "decision_date": "2026-01-15"},
+    {"submission_id": "SUB-000035", "asset_id": "AST-000002", "kind": "bla", "agency": "FDA", "designation": null, "status": "planned", "target_date": "2030-06-30", "submitted_date": null, "decision_date": null}
+  ],
+  "deals": [
+    {"deal_id": "DEL-000041", "asset_id": "AST-000002", "partner_id": "PTN-000001", "deal_type": "cdmo_supply", "status": "signed", "upfront_millions": null, "milestones_millions": null, "royalty_pct": null, "signed_date": "2024-05-15", "dealsim_name": null}
+  ],
+  "partners": [
+    {"partner_id": "PTN-000001", "name": "EXAMPLE Northgate Cell Manufacturing", "kind": "cdmo", "country": "US"},
+    {"partner_id": "PTN-000002", "name": "EXAMPLE Harbor Clinical Research", "kind": "cro", "country": "US"}
+  ],
+  "ip_refs": [
+    {"ip_id": "IPR-000051", "asset_id": "AST-000002", "kind": "provisional", "number": "US 63/000,201 (EXAMPLE)", "title": "EXAMPLE bispecific CD19xCD22 CAR constructs", "priority_date": "2023-03-15", "expiry_date": null, "status": "filed"},
+    {"ip_id": "IPR-000052", "asset_id": "AST-000002", "kind": "pct", "number": "PCT/US2024/000201 (EXAMPLE)", "title": "EXAMPLE bispecific CD19xCD22 CAR constructs", "priority_date": "2023-03-15", "expiry_date": "2044-03-15", "status": "published"},
+    {"ip_id": "IPR-000053", "asset_id": "AST-000002", "kind": "granted", "number": "US 12,000,201 B2 (EXAMPLE)", "title": "EXAMPLE CAR-T manufacturing process", "priority_date": "2024-01-10", "expiry_date": "2045-09-30", "status": "granted"}
+  ],
+  "external_ids": [
+    {"source_system": "CGTDataModel", "external_id": "PRG-0002", "entity": "program", "canonical_id": "AST-000002"},
+    {"source_system": "PTSPredictor", "external_id": "VR-201", "entity": "asset", "canonical_id": "AST-000002"}
+  ]
+}

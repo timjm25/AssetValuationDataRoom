@@ -1,0 +1,20 @@
+# Agent-capability descriptor (portfolio-agent scaffold format).
+capability: asset-valuation
+canonical_repo: timjm25/AssetValuationDataRoom
+agent: commercial-bd
+gxp: false
+
+invocation:
+  mode: api_service
+  entrypoint: valuation_room.api:create_app
+  openapi: /openapi.json
+
+entities:
+  reads: [Asset, Indication, Study, Batch, Submission, Deal, Partner, IPReference]
+  writes: [ValuationSnapshot, DataRoom]
+
+skill: null
+
+depends_on:
+  - asset-registry
+  - pharma-event-bus
